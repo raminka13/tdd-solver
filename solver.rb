@@ -4,4 +4,7 @@ class Solver
 
     num * factorial(num - 1)
   end
+  def reverse_string(rstring)
+    return rstring.reverse
+  end
 end
