@@ -4,18 +4,18 @@ class Solver
 
     num * factorial(num - 1)
   end
-  
+
   def reverse_string(rstring)
-    return rstring.reverse
+    rstring.reverse
   end
 
   def fizzbuzz(num)
-    if num%3==0 && num%5==0
-      return "FizzBuzz"
-    elsif num%3==0
-      return "Fizz"
-    elsif num%5==0
-      return "Buzz"
+    if (num % 3).zero? && (num % 5).zero?
+      'FizzBuzz'
+    elsif (num % 3).zero?
+      'Fizz'
+    elsif (num % 5).zero?
+      'Buzz'
     end
   end
 end

@@ -22,30 +22,30 @@ describe Solver do
 
   context 'Checking if a string is reverse string' do
     it 'should return olleh for the string hello' do
-      result = @solver.reverse_string("hello")
-      expect(result).to eq "olleh"
+      result = @solver.reverse_string('hello')
+      expect(result).to eq 'olleh'
     end
 
     it 'should return anihc for the string china' do
-      result = @solver.reverse_string("china")
-      expect(result).to eq "anihc"
+      result = @solver.reverse_string('china')
+      expect(result).to eq 'anihc'
     end
   end
 
   context 'Checking a number and return FizzBuzz logic string' do
-    it 'should return Fizz if n is divisible by 3 and Buzz if divisibel by 5 and FizzBuzz if divisible by 3 and 5 at the same time' do
+    it 'should return Fizz if n is divisible by 3' do
       result = @solver.fizzbuzz(3)
-      expect(result).to eq "Fizz"
+      expect(result).to eq 'Fizz'
     end
 
-    it 'should return Fizz if n is divisible by 3 and Buzz if divisibel by 5 and FizzBuzz if divisible by 3 and 5 at the same time' do
+    it 'should return Buzz if divisible by 5' do
       result = @solver.fizzbuzz(5)
-      expect(result).to eq "Buzz"
+      expect(result).to eq 'Buzz'
     end
 
-    it 'should return Fizz if n is divisible by 3 and Buzz if divisibel by 5 and FizzBuzz if divisible by 3 and 5 at the same time' do
+    it 'should return FizzBuzz if divisible by 3 and 5 at the same time' do
       result = @solver.fizzbuzz(15)
-      expect(result).to eq "FizzBuzz"
+      expect(result).to eq 'FizzBuzz'
     end
   end
 end
