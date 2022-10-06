@@ -1,5 +1,6 @@
 class Solver
   def factorial(num)
+    return "#{num} is not a valid number" if num.negative?
     return 1 if num < 2
 
     num * factorial(num - 1)
@@ -16,6 +17,8 @@ class Solver
       'Fizz'
     elsif (num % 5).zero?
       'Buzz'
+    else
+      num.to_s
     end
   end
 end
