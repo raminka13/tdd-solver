@@ -31,4 +31,21 @@ describe Solver do
       expect(result).to eq "anihc"
     end
   end
+
+  context 'Checking a number and return FizzBuzz logic string' do
+    it 'should return Fizz if n is divisible by 3 and Buzz if divisibel by 5 and FizzBuzz if divisible by 3 and 5 at the same time' do
+      result = @solver.fizzbuzz(3)
+      expect(result).to eq "Fizz"
+    end
+
+    it 'should return Fizz if n is divisible by 3 and Buzz if divisibel by 5 and FizzBuzz if divisible by 3 and 5 at the same time' do
+      result = @solver.fizzbuzz(5)
+      expect(result).to eq "Buzz"
+    end
+
+    it 'should return Fizz if n is divisible by 3 and Buzz if divisibel by 5 and FizzBuzz if divisible by 3 and 5 at the same time' do
+      result = @solver.fizzbuzz(15)
+      expect(result).to eq "FizzBuzz"
+    end
+  end
 end
