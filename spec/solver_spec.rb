@@ -19,4 +19,16 @@ describe Solver do
       expect(result).to eq 3_628_800
     end
   end
+
+  context 'Checking if a string is reverse string' do
+    it 'should return olleh for the string hello' do
+      result = @solver.reverse_string("hello")
+      expect(result).to eq "olleh"
+    end
+
+    it 'should return anihc for the string china' do
+      result = @solver.reverse_string("china")
+      expect(result).to eq "anihc"
+    end
+  end
 end
